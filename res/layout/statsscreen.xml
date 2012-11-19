@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:background="@drawable/chalkboard">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Statistics"
+            android:id="@+id/statsTitle" android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
+            android:layout_marginTop="60px" android:textSize="40px"/>
+
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="650px" android:id="@+id/frmMenu" android:onClick="showSplashScreen">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgMenu" android:layout_gravity="center"
+                android:background="@drawable/button_empty" android:baselineAlignBottom="false"
+                android:onClick="showSplashScreen"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:id="@+id/txtMenu" android:onClick="showSplashScreen"
+                android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300px"
+            android:layout_marginTop="650px" android:id="@+id/frmGame" android:onClick="showGameScreen">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgGame" android:layout_gravity="center"
+                android:background="@drawable/button_empty" android:baselineAlignBottom="false"
+                android:onClick="showGameScreen"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play"
+                android:id="@+id/txtGame" android:onClick="showGameScreen"
+                android:layout_gravity="center"/>
+    </FrameLayout>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good job!!"
+            android:id="@+id/lastScoreTextView" android:layout_column="0" android:layout_marginTop="140px"
+            android:layout_centerHorizontal="true" android:textSize="30px" android:textColor="#dcdcdc"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your last score was:"
+              android:id="@+id/textView" android:layout_column="0" android:layout_marginTop="250px"
+              android:layout_centerHorizontal="true" android:textSize="30px" android:textColor="#dcdcdc"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Words you created:" android:id="@+id/textView1" android:layout_column="0"
+              android:layout_marginTop="370px" android:layout_centerHorizontal="true" android:textSize="30px"
+              android:longClickable="false" android:linksClickable="false" android:focusableInTouchMode="false"
+              android:focusable="false" android:enabled="false" android:textColor="#dcdcdc"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Your longest word:" android:id="@+id/textView2" android:layout_column="0"
+              android:layout_marginTop="500px" android:layout_centerHorizontal="true" android:textSize="30px"
+              android:textColor="#dcdcdc"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/lastScore" android:layout_column="1" android:layout_centerHorizontal="true"
+            android:layout_marginTop="290px" android:textSize="50px" android:textStyle="bold"
+            android:textColor="#ffffff"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"
+              android:id="@+id/numWords" android:layout_column="1" android:layout_centerHorizontal="true"
+              android:layout_marginTop="410px" android:textSize="50px" android:textStyle="bold"
+              android:textColor="#ffffff"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"
+              android:id="@+id/longestWord" android:layout_column="1" android:layout_centerHorizontal="true"
+              android:layout_marginTop="540px" android:textSize="50px" android:textStyle="bold"
+              android:singleLine="false" android:phoneNumber="false" android:password="false"
+              android:longClickable="false" android:linksClickable="false" android:focusableInTouchMode="false"
+              android:focusable="false" android:enabled="false" android:textColor="#ffffff"/>
+</RelativeLayout>

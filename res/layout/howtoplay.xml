@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:background="@drawable/chalkboard">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How To Play"
+            android:id="@+id/textView"
+            android:textSize="50px"
+            android:layout_centerHorizontal="true" android:layout_marginTop="50px"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use your spelling skills to make a valid dictionary word. Increase your score by making longer words. Complete as many words as you can in 60 seconds."
+            android:id="@+id/textView1" android:layout_gravity="left|center_vertical"
+            android:layout_marginTop="150px" android:layout_marginLeft="35px" android:layout_marginRight="35px"
+            android:textSize="26px"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Watch out, the consonants are random! Take advantage of apple and gold star multipliers to increase your score even more!"
+              android:id="@+id/textView2" android:layout_gravity="left|center_vertical"
+              android:layout_alignParentTop="true"
+              android:layout_marginTop="350px" android:layout_marginLeft="35px" android:layout_marginRight="35px"
+              android:textSize="26px" android:clickable="false" android:editable="false"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:onClick="showSplashScreen"
+            android:id="@+id/backButton" android:layout_gravity="center"
+            android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
+            android:layout_marginTop="600px"/>
+</RelativeLayout>

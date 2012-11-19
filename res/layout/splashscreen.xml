@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:background="@drawable/chalkboard">
+
+    <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to"
+                android:id="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="29dp" android:textSize="34px"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alpha Scram!"
+            android:id="@+id/textView1" android:layout_centerHorizontal="true" android:layout_below="@+id/textView"
+            android:textSize="50px" android:layout_marginTop="30px"/>
+
+
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250px" android:id="@+id/frmPlay" android:layout_centerHorizontal="true"
+            android:onClick="showGameScreen">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgPlay" android:layout_gravity="center"
+                android:background="@drawable/button_empty_big" android:baselineAlignBottom="false"
+                android:onClick="showGameScreen"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:id="@+id/txtPlay" android:phoneNumber="false" android:layout_gravity="center"
+                android:textSize="28px" android:onClick="showGameScreen"/>
+    </FrameLayout>
+
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="425px" android:id="@+id/frmStats" android:layout_centerHorizontal="true"
+            android:onClick="showStatsScreen">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgStats" android:layout_gravity="center"
+                android:background="@drawable/button_empty_big" android:baselineAlignBottom="false"
+                android:onClick="showStatsScreen"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stats"
+                android:id="@+id/txtStats" android:phoneNumber="false" android:layout_gravity="center"
+                android:textSize="28px" android:onClick="showStatsScreen"/>
+    </FrameLayout>
+
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="600px" android:id="@+id/frmHowToPlay" android:layout_centerHorizontal="true"
+            android:onClick="showDirectionScreen">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgHowToPlay" android:layout_gravity="center"
+                android:background="@drawable/button_empty_huge" android:baselineAlignBottom="false"
+                android:onClick="showDirectionScreen"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How To Play"
+                android:id="@+id/txtHowToPlay" android:phoneNumber="false" android:layout_gravity="center"
+                android:textSize="28px" android:onClick="showDirectionScreen"/>
+    </FrameLayout>
+
+</RelativeLayout>
